@@ -1,2 +1,0 @@
-config SHIELD_MDRTOUCH
-    def_bool $(shields_list_contains, mdr_touch)
