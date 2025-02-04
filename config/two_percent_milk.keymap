@@ -26,7 +26,7 @@
 &kp CLCK   &kp S      &kp F   &kp H   &kp K       &kp SEMICOLON     &kp ENTER
 &kp A      &kp D      &kp G   &kp J   &kp L       &kp SQT
 &kp LSHFT  &kp X      &kp V   &kp N   &kp COMMA   &kp SLASH                                       &kp UP
-&kp Z      &kp C      &kp B   &kp M   &kp PERIOD  &kp RIGHT_SHIFT
+&kp Z      &kp C      &kp B   &kp M   &kp PERIOD  &kp RSHIFT
 &kp LCTRL  &kp LALT                   &kp RALT    &mo 1             &kp LEFT                      &kp RIGHT
 &kp LWIN   &kp SPACE                  &kp RWIN    &kp RCTRL                                       &kp DOWN
             >;
