@@ -11,28 +11,28 @@
         label = "default_kscan";
         diode-direction = "col2row";
 
-        row-gpios = <&nice_nano P0.07 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.08 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.09 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        row-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //ROW0
+                    <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //ROW1
+                    <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //ROW2
+                    <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //ROW3
+                    <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //ROW4
+                    <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //ROW5
+                    <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //ROW6
+                    <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //ROW7
+                    <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //ROW8
+                    <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //ROW9
+                    <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //ROW10
+                    <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  //ROW11
 
-        col-gpios = <&nice_nano P0.01 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.00 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.03 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.04 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.05 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.06 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                    <&nice_nano P0.20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        col-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //COL0
+                    <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //COL1
+                    <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //COL2
+                    <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //COL3
+                    <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //COL4
+                    <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //COL5
+                    <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   //COL6
+                    <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //COL7
+                    <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  //COL8
     };
 
     default_transform: matrix_transform {
